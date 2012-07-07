@@ -1,0 +1,78 @@
+Jeepers Elvis! v0.2
+John Wiggins : 2002
+prok@mail.utexas.edu
+
+Background :
+	Jeepers Elvis! (JE!) is a super-duper video mixing architechture. By itself, it
+is useless. Add plugins, and things begin to get interesting. Included with the base
+release are a few plugins to give you a feel for what is possible with JE!
+	Please, please, PLEASE send feedback. I can make JE! a whole lot better if
+people would send feedback. Think of it as payment for all the hardwork I've put into
+the code. (ok, that's enough of that) There is a convenient email button in the about
+box that will put you in touch with me.
+
+Getting Started :
+	First things first, double click on the Jeepers Elvis! icon. Once presented with
+the interface, you can click and drag plugins from the Plugins window to the large
+central window. Once a plugin is loaded, its icon will become unshaded. Click on the
+UI button next to the plugin's icon for the user interface of the plugin. To unload
+a plugin, simply click on it's icon and drag away. The icon will dim when the plugin
+has been unloaded. Currently, a plugin must be removed before another plugin can be
+put in its place. (accept for filters)
+	In order for output to appear on the large output window, there must be a mixer
+present and at least one source running. The order of filters in the filter list
+determines the order they are called in. An output plugin is not necessary for output,
+although an output plugin is guaranteed to be in sync with the rest of the
+"graphics pipeline" unlike the default output window. 
+
+Included Plugins:
+
+Movie Looper :
+	A source plugin that loops through movie files. Handles any video format supported
+by the media kit. Forward, backward, and "back and forth" play directions are supported.
+(backward play quality varys depending on compression) Beginning and end points can be
+set for individual video clips. Drag video files into the scrollview on the left. Click
+on the name of a clip to start it.
+
+Alpha Mixer :
+	A mixer plugin that does simple alpha compositing of incoming video frames. The
+background frame can be set to either the first or second source. Play around with the
+slider, it should be obvious. (assuming you have two running sources)
+
+Experimental Mixer:
+	I got tired of only having one working mixer, so I wrote another. :) This mixer
+combines the two sources with one of four ops. (add/subtract/max/min)
+
+Channel Whacker Filter :
+	Reworked in version 0.2. This filter lets you adjust the amount of red, green,
+and blue in the output image.
+
+Invert Filter :
+	Super simplistic filter. Inverts the colors of the video frame. Nice effect.
+No significant UI.
+
+FullScreen Output :
+	Fullscreen output. It works much better than it did in the last release, at least on
+my machine. (famous last words, I know) The scaling algorithm is still sub-optimal.
+But! You now have the option of using your video card's overlay if the driver supports it.
+Currently B_RGB32 and B_RGB16 are the only supported colorspaces. (B_RGB32 is
+ untested) Hit the escape key to regain control of the screen.
+
+Changes in 0.2:
+	- Fullscreen output works now. Overlay is supported on some video cards.
+	- Fixed the race condition that caused crashes when plugins were 
+	unloaded. (I'm pretty sure)
+	- Added the experimental mixer. It's fun. Play with it.
+	- Updated the Channel Whacker Filter so that you can adjust amounts of
+	RGB instead of just turning them on or off.
+
+Known Bugs:
+
+	Ooh boy. Please do not email me about these. I know about them. They happen
+infrequently on my computer, but might be more frequent on yours. Because of this
+odd frequency of occurence, I can't fix them as easily.
+
+- The Movie Looper plugin will sometimes crash when switching video clips. This is due
+to a race condition that I know about. (it's not an easy fix) If you really want to,
+tell me the speed and number of cpus in your machine and whether or not this happens
+on your machine.
