@@ -1,0 +1,16 @@
+Jellikit 0.9 beta
+John Wiggins. 1998
+
+To use:
+- Drag Files onto Jellikit's Tracker icon, use the 'open with' menu, or just double click Jellikit to start.
+- To open more files while Jellikit is running, use the two methods already described, or drag and drop files from the Tracker onto a Jellikit window or use the 'Open File...' in Jelikit's file menu.
+- A green dot next to an attributes name means that you have an addon that is able to edit that attribute.
+- To copy attributes from file to file, just drag them between windows.
+- To add or remove attributes to a file, use the function available in the edit menu.
+- To edit an attribute, just click on it. If there is an add-on available for its type, it will appear in the edit window available for you to edit. Hit the 'ok' button when you are happy with your changes. This will apply the changes you made. To actually save them you need to choose 'Save' or 'Save As...' from the file menu.
+
+
+Known Bugs:
+- Copying an attribute from one window to another when an attribute with the same name already exists in the destination window will erase the title of the Edit window if you overwrite the attribute in the destination window with the one you are dragging. Not destructive, but really hard to explain, and will take a little while to figure out and fix.
+- The BRectAddon can only display, actual editing does not work. Be happy it doesn't crash :)
+- You tell me what you find (john@ubermensch.net or john@beoscentral.com)

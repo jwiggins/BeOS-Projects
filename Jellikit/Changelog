@@ -1,0 +1,39 @@
+Jellikit Changelog
+
+0.9 beta 6
+- Fixed some stuff with showing and hiding the Add Attribute window
+- Totally revamped the ChangeLanguageToEnglish.sh script. I'll keep doing this until people tell me that it ruins their world every time I decide to screw around with my string resources. :) I shouldn't have to do this kinda thing again though.
+- Finally got attribute dragging to look presentable. (yay!) It looks exactly like a tracker drag now. (no nasty drawing problems anymore)
+
+0.9 beta 5
+- Made all Alerts asynchronous. No more blocked windows that can't redraw themselves.
+- Added an alert that asks you if you want to save when closing if the file has changed. (took me long enough eh?)
+- The little icon that drag-and-drop uses can be changed by changing the app's icon. Try it, its fun.
+- Added a couple more strings to the ChangeLanguageToEnglish.sh script. Be warned if you have a translated version that I don't know about.
+- Wrote a document decribing the current state of the add-on API (still no 3rd party add-ons)
+
+0.9 beta 4
+- Gave Jellikit a Tracker icon. I hope you like it!
+- Added better representation of dragged attributes. No more grey rectagles!
+- Cleaned up drag-and-drop. The drag session will not begin until you move the mouse after clicking on an attribute.
+- Added 'Predefined Attribute' menus. The one in the 'Add Attribute' window grabs all the predefined attributes out of the mime database on your hard drive. The one in the 'Edit' menu of the main file window looks for a 'BEOS:TYPE' attribute on the file you are editing and fills the menu with attributes associated with that type if they exist in the mime database. This should be useful if you use Trackerbase or you have custom 'People' attributes.
+- Modified the ChangeLanguageToEnglish.sh script. Old versions of this script will not work with 0.9 beta 4. (well, they will, but the results won't be pretty)
+- Fixed a crash experienced when selecting Quit from the file menu rather than closing the last window. Man do I feel silly :)
+- Added more stuff to the About box. It actually contains information now. (and utra nifty scrolling credits!)
+
+0.9 beta 3
+- Made Jellikit language neutral. You can now change all of Jellikit's displayed strings with a shell script.
+- I _think_ I finally killed the weird bugs that reared their ugly heads whenever multiple file were open and switching between those files' windows would make the Edit window do strange things. If you catch any that you can reproduce, by all means mail me at john@ubermensch.net
+- Finally brave enough to put all this madness on BeWare. Look out world.
+- Fixed the BRect addon. It now supports editing too.
+- Changed the Bool addon so that it looks like the Integer and String add-ons, both of which mimic attribute editing interfaces in DiskProbe.
+
+0.9 beta 2 -
+- Fixed crashing bug experienced when saving.
+- Fixed a bug where you could add attributes with duplicate names from the Add Attribute window.
+- Fixed the BoolAddon. It now works.
+- Found a bug in BFilePanel. The open panel won't allow multiple selection.(even though I told it to) To work around this, just drag and drop multiple files from the tracker onto any Jellikit window. (except the edit window)
+- Added IntegerAddon
+
+0.9 beta 1 -
+- Initial release. Too tired to know what bugs exist.
