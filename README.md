@@ -7,3 +7,4 @@ This is a small collection of programs that I wrote for BeOS.
 * Jeepers Elvis!: A plugin centered video mixer
 * Jellikit: An attribute editor for BFS file attributes
 * Sketch: An Etch-A-Sketch
+* TheTick: A news ticker replicant that was built to read proto-RSS feeds
