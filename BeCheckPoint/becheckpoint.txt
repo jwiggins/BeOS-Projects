@@ -1,0 +1,8 @@
+===================== 
+         File:  becheckpoint.zip
+       Author:  John Wiggins
+      Release: 1.0.2 1/23/99
+Compatibility: R4 ppc, R4 x86
+     Location: contrib/misc
+  Description:  BeCheckPoint is a login type application. When launched, it kills the Tracker and Deskbar, (and mail_daemon if its running). After killing off all the useful stuff :) you get a password prompt. You can't do much of anything until you enter your password (appropriately so :). After you enter a correct password, BeCheckPoint unkills everything it killed at startup and exits.
+=====================
